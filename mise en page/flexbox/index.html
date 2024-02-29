@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            display:flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            
+            height: 100vh;
+  
+            /*
+            100 % de la hauteur du parent
+            */
+        }
+        div>*{
+         
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="order: 2;">1</h1>
+        <h1 style="order: 1; align-self: center;">2</h1>
+        <h1 style="order: 3;">3</h1>
+        <!--
+            exercice1:
+            display:flex;
+            align-items:flex-end;
+            justify-content: space-between;
+            flex-direction:column-reverse;
+        -->
+         <!--
+            exercice2:
+            display:flex;
+            align-items:center;
+            justify-content: center;
+        -->
+    </div>
+</body>
+</html>
