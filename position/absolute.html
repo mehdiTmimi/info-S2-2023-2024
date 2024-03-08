@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .search{
+            width: 15px;
+        }
+        .div1{
+            width: 50%;
+            height: 100vh;
+            background-color: aqua;
+            position: relative;
+        }
+        .div2{
+            width: 50%;
+            height: 50%;
+            background-color: rgb(218, 131, 25);
+        }
+        .div3{
+            width: 50%;
+            height: 50%;
+            position: relative;
+            background-color: rgb(161, 11, 216);
+        }
+        h1{
+            position: absolute;
+            /*
+            des translations par rapport au parent le plus proche qui a une position
+            differente de static (si y a pas => fenetre)*/
+            top: 10px;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="div2">
+            <div class="div3">
+                <h1>title</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

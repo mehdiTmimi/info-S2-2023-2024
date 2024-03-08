@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        media query:
+        la possibilite d'avoir un/des style conditionne par la largeur 
+        et type de l ecran
+        syntax:
+        @media sreen and (max-width||min-width:700px){
+            selector{
+                style
+            }
+            selector{
+                style
+            }
+        }
+    -->
+    <style>
+        body{
+            background-color: darkmagenta;
+        }
+        @media screen and (max-width:600px) and (min-width:400px){
+            body{
+                background-color: brown;
+            }
+            h1{
+                font-size: 5em;
+                color: blue;
+            }
+        }
+        @media screen  and (min-width:600px){
+            body{
+                background-color: red;
+            }
+            h1{
+                font-size: 5em;
+                color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>salut</h1>
+</body>
+</html>
